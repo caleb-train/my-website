@@ -1,0 +1,39 @@
+.btn {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  vertical-align: middle;
+  padding: 8px 25px;
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  box-shadow: transparent 0 0 0;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+  outline: none;
+
+  &.full {
+    border-radius: 35px;
+  }
+
+  &.medium {
+    border-radius: 5px;
+  }
+
+  &-block {
+    display: block;
+    width: 100%;
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+
+  &.disabled:hover,
+  &[disabled]:hover {
+    box-shadow: none;
+  }
+}

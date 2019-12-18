@@ -1,0 +1,43 @@
+.alert {
+  position: relative;
+  padding: 13px 30px 13px 15px;
+  margin-bottom: 22px;
+  border-radius: 4px;
+
+  a {
+    color: inherit
+  }
+
+  .close {
+    top: 14px;
+    right: 15px;
+    position: absolute;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: 0 0;
+    color: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  &-success {
+    color: #5cb85c;
+    background-color: #c7e6c7
+  }
+
+  &-info {
+    color: #5bc0de;
+    background-color: #daf1f8
+  }
+
+  &-warning {
+    color: #f0ad4e;
+    background-color: #fceedb
+  }
+
+  &-danger {
+    color: #d9534f;
+    background-color: #f4cecd
+  }
+}

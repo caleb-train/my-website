@@ -1,0 +1,147 @@
+.styled-ul,
+.styled-ol,
+.styled-list,
+.styled-list ol,
+.styled-list ul,
+.clear-list,
+.styled-ol ol,
+.styled-ul ul {
+  list-style: none;
+}
+
+.styled-ul,
+.styled-ol,
+.styled-ol ol,
+.styled-ul ul {
+  line-height: 1.7em
+}
+
+.clear-list {
+  margin: 0;
+  padding: 0
+}
+
+.styled-ul ul {
+  padding-left: 1.1em;
+  margin: .7em 0 .7em 1.2em
+}
+
+.styled-ol {
+  line-height: 1.7em;
+  counter-reset: my-badass-counter
+}
+
+.styled-ul li,
+.styled-ol li {
+  position: relative
+}
+
+.styled-ol li:before {
+  content: counter(my-badass-counter) ".";
+  counter-increment: my-badass-counter;
+  font-weight: 700;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: -1.6em
+}
+
+.styled-ul li:before {
+  content: '';
+  top: .85em;
+  left: -1.1em;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -1.5px
+}
+
+.styled-ul>li:before {
+  width: 5px;
+  height: 5px;
+  left: -1.6em;
+  margin-top: -2.5px
+}
+
+li.theme-primary:before {
+  background-color: var(--primary-text);
+}
+
+li.theme-inherit:before {
+  background-color: inherit;
+}
+
+li.theme-default:before {
+  background-color: var(--default-text);
+}
+
+li.theme-light:before {
+  background-color: var(--light-text);
+}
+
+.styled-ul>li>ul {
+  font-size: .94em
+}
+
+.styled-ul>li>ul ul {
+  font-size: .9em
+}
+
+.styled-ol {
+  line-height: 1.7em;
+  counter-reset: my-badass-counter
+}
+
+.styled-ol li {
+  position: relative
+}
+
+.styled-ol li:before {
+  content: counter(my-badass-counter) ".";
+  counter-increment: my-badass-counter;
+  font-weight: 700;
+  display: inline;
+  position: absolute;
+  top: 0;
+  left: -1.6em
+}
+
+.styled-list {
+  font-weight: 700;
+  line-height: 2.4em
+}
+
+.styled-list li {
+  position: relative
+}
+
+.styled-list li:before {
+  content: "\f00c";
+  font-family: icomoon;
+  color: inherit;
+  top: 0;
+  left: -1.6em;
+  position: absolute
+}
+
+
+@media (min-width:768px) {
+  .styled-list {
+    line-height: 1.1em
+  }
+
+  .styled-list,
+  .styled-list ol,
+  .styled-list ul {
+    padding-left: 2.7em
+  }
+
+  .styled-list li {
+    margin-bottom: 1.16em
+  }
+
+  .styled-list li:before {
+    left: -2.7em
+  }
+}

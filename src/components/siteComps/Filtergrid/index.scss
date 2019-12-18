@@ -1,0 +1,148 @@
+.pf-filter button.active,
+.pf-filter button:hover {
+  opacity: 1
+}
+
+.pf-filter {
+  margin: 1rem 0;
+
+  button {
+    margin-right: 1rem;
+  }
+}
+
+.valign-table {
+  width: 100%;
+  height: 100%;
+  display: table
+}
+
+.valign-cell,
+img {
+  vertical-align: middle
+}
+
+.valign-cell {
+  display: table-cell
+}
+
+.pf-project {
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none
+}
+
+.pf-project:hover .pf-caption {
+  opacity: 1;
+  visibility: visible
+}
+
+.pf-caption {
+  left: 0;
+  visibility: hidden;
+  top: 0;
+  height: 100%
+}
+
+.pf-project:hover .pf-btn,
+.pf-project:hover .pf-title {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0)
+}
+
+.pf-figure {
+  z-index: 1;
+  margin: 1px 0;
+  overflow: hidden;
+}
+
+
+img.pf-figure {
+  width: 100%;
+  display: inline-block
+}
+
+.pf-caption {
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, .8);
+  transition: opacity .3s ease-in-out, visibility .3s ease-in-out
+}
+
+.pf-caption .valign-cell {
+  padding: 20px
+}
+
+.pf-title {
+  font-size: 1.318em;
+  color: inherit;
+  margin-top: 0;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out
+}
+
+.pf-text {
+  opacity: .7;
+  font-size: .938em;
+  margin-bottom: 35px
+}
+
+.pf-btn {
+  -webkit-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  transform: translateY(10px);
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out
+}
+
+.pf-caption {
+  left: 0;
+  visibility: hidden;
+  top: 0;
+  height: 100%
+}
+
+.pf-grid-item {
+  position: relative;
+  float: left;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.pf-grid-item,
+.pf-grid-sizer {
+  width: 100%
+}
+
+/* clear fix */
+.pf-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.pf-figure,
+.pf-project {
+  position: relative
+}
+
+
+@media (min-width:768px) {
+
+  .pf-grid-item,
+  .pf-grid-sizer {
+    width: 49.5%
+  }
+}

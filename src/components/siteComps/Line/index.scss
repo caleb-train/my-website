@@ -1,0 +1,26 @@
+hr {
+  background: 0 0;
+  border-width: 0 0 1px;
+  border-style: solid;
+  margin: 22px 0;
+
+  &.dotted {
+    border-style: dotted;
+  }
+
+  &.dashed {
+    border-style: dashed;
+  }
+
+  &.brd-primary {
+    border-color: var(--primary-color);
+
+    &-default {
+      border-color: var(--default-color);
+    }
+
+    &-light {
+      border-color: var(--light-color);
+    }
+  }
+}

@@ -1,0 +1,85 @@
+blockquote {
+  font-size: 2em;
+  line-height: 1.2em;
+  padding: 1.1em 1.9em;
+  position: relative;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 7px;
+  width: 100%;
+  max-width: 470px;
+  margin: 0 auto 22px
+}
+
+blockquote p:last-child {
+  margin-bottom: 0
+}
+
+blockquote cite {
+  font-size: .8rem;
+  font-style: normal;
+  line-height: 1.2em;
+  display: block;
+  margin-top: 22px
+}
+
+blockquote.bg-primary {
+  border-color: transparent
+}
+
+blockquote.quote-top {
+  margin-top: 1em
+}
+
+blockquote.quote-side:before,
+blockquote.quote-top:before {
+  content: "\e90a";
+  font-size: .7em;
+  font-family: icomoon;
+  line-height: 2.7em;
+  text-align: center;
+  width: 2.7em;
+  height: 2.7em;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: -.25em .25em 1em rgba(118, 95, 91, .3)
+}
+
+blockquote.quote-top:before {
+  top: -1.7em;
+  left: 50%;
+  margin-left: -1.35em
+}
+
+blockquote.quote-side:before {
+  top: 2.3em;
+  left: -1.2em
+}
+
+blockquote.alignleft {
+  margin: .4em 1.6em 1.6em 0
+}
+
+blockquote.alignright {
+  margin: .4em 0 1.6em 1.6em
+}
+
+blockquote.aligncenter {
+  clear: both;
+  margin-top: .4em;
+  margin-bottom: 1.6em
+}
+
+blockquote.quote-side:before,
+blockquote.quote-top:before {
+  color: #fff
+}
+
+blockquote {
+  border-color: #1f1f1f
+}
+
+blockquote.quote-side:before,
+blockquote.quote-top:before {
+  background-color: #333
+}

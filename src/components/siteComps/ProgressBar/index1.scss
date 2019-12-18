@@ -1,0 +1,17 @@
+.progress-chart {
+  text-align: center;
+  display: inline-block;
+
+  &.Line .progressbar-text {
+    left: 113% !important;
+  }
+
+  .progressbar-text {
+    font-size: inherit;
+  }
+
+  #container {
+    margin: .5rem auto;
+  }
+
+}

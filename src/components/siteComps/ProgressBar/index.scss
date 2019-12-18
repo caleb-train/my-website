@@ -1,0 +1,38 @@
+.progress-chart {
+  text-align: center;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+
+  &.default .CircularProgressbar-path {
+    stroke: var(--default-color);
+  }
+
+  &.primary .CircularProgressbar-path {
+    stroke: var(--primary-color);
+  }
+
+  &.light .CircularProgressbar-path {
+    stroke: var(--light-color);
+  }
+
+  .progress-title {
+    font-size: 1em;
+    line-height: 1.2em;
+    display: block;
+    margin-bottom: 0.7em;
+    margin-top: 10px;
+  }
+
+  .progress-bar {
+    height: 93px;
+    width: 93px;
+    margin: 0 auto;
+    position: relative;
+
+    svg {
+      height: 100%;
+      display: block;
+    }
+  }
+}
