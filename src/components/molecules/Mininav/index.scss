@@ -1,26 +1,28 @@
-.avatar {
-  border-radius: 50%
-}
+.min-nav {
+  .avatar {
+    border-radius: 50%
+  }
 
-.avatar-42 {
-  width: 42px;
-  height: 42px
-}
+  .avatar-42 {
+    width: 42px;
+    height: 42px
+  }
 
-.avatar-195 {
-  width: 195px;
-  height: 195px
-}
+  .avatar-195 {
+    width: 195px;
+    height: 195px
+  }
 
-.comment-header .avatar {
-  top: 1.063em;
-  left: 0;
-  position: absolute;
-  border-radius: 50%
-}
+  .comment-header .avatar {
+    top: 1.063em;
+    left: 0;
+    position: absolute;
+    border-radius: 50%
+  }
 
-.ref-avatar {
-  top: 0;
-  left: 0;
-  position: absolute
+  .ref-avatar {
+    top: 0;
+    left: 0;
+    position: absolute
+  }
 }

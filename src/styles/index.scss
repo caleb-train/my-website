@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Quicksand:400,500,600,700&display=swap');
+
 :root {
   --primary-color: #d14b4a;
   --primary-text: #fff;
@@ -5,6 +7,10 @@
   --light-text: #373737;
   --default-color: #373737;
   --default-text: #fff;
+}
+
+body {
+  font-family: Quicksand;
 }
 
 .theme-primary {

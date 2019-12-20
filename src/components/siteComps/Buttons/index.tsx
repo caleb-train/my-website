@@ -5,6 +5,7 @@ import "./index.scss"
 export default ({
   borderRadius = "full",
   attr = {},
+  value = "",
   theme = "default",
   ...props
 }: IButton) => (
@@ -23,6 +24,6 @@ export default ({
     {...attr}
   >
     <span className={`ctr-icon ${props.icon}`}></span>
-    {props.value}
+    {value}
   </button>
 )

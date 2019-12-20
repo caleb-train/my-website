@@ -15,6 +15,7 @@ import { UList, List } from "../components/siteComps/List"
 import Grid from "../components/siteComps/Filtergrid"
 import Sidebox from "../components/molecules/Sidebox"
 import Mininav from "../components/molecules/Mininav"
+import Content from "../components/molecules/Content"
 
 const IndexPage = () => (
   <Layout>
@@ -22,6 +23,7 @@ const IndexPage = () => (
     <div id="crt-container" className="crt-container">
       <Sidebox />
       <Mininav />
+      <Content />
     </div>
   </Layout>
 )

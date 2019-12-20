@@ -10,7 +10,7 @@ export const UList = ({ style = "", ...props }: IUList) => {
   )
 }
 
-export const List = ({ theme = "light", ...props }: IList) => (
+export const List = ({ theme = "inherit", ...props }: IList) => (
   <li className={`theme-${theme} ${props.thin ? "text-thin" : ""}`}>
     {props.children}
   </li>

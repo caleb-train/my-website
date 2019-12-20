@@ -1,0 +1,114 @@
+.page {
+  .clearfix:after {
+    clear: both
+  }
+
+  .clearfix:after,
+  .clearfix:before {
+    content: " ";
+    display: table
+  }
+
+  .clear-mrg>:last-child {
+    margin-bottom: 0 !important
+  }
+
+  .crt-paper {
+    position: relative
+  }
+
+  .crt-paper,
+  .crt-paper .paper-padd {
+    padding-top: 20px;
+    padding-bottom: 20px
+  }
+
+  .crt-paper-layers {
+    margin-top: 15px
+  }
+
+  .crt-paper-layers:first-child {
+    margin-top: 0
+  }
+
+  .crt-desktop .crt-paper-layers.crt-animate {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
+    transition: opacity .3s ease-out, visibility .3s ease-out, -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out;
+    transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out, -webkit-transform .3s ease-out
+  }
+
+  .crt-desktop .crt-paper-layers.crt-animated {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transition: opacity .3s ease-out, visibility .3s ease-out, -webkit-transform .3s ease-out;
+    transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out;
+    transition: transform .3s ease-out, opacity .3s ease-out, visibility .3s ease-out, -webkit-transform .3s ease-out
+  }
+
+  @media (min-width:992px) {
+    .crt-paper-layers {
+      position: relative;
+      z-index: 0
+    }
+
+    .crt-layers-2 .crt-paper-layers {
+      margin-bottom: 3px
+    }
+
+    .crt-layers-3 .crt-paper-layers {
+      margin-bottom: 6px
+    }
+
+    .crt-layers-2 .crt-paper-layers:before,
+    .crt-layers-3 .crt-paper-layers:after,
+    .crt-layers-3 .crt-paper-layers:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute
+    }
+
+    .crt-layers-2 .crt-paper-layers:before,
+    .crt-layers-3 .crt-paper-layers:before {
+      top: 3px;
+      left: 3px;
+      z-index: 2
+    }
+
+    .crt-layers-3 .crt-paper-layers:after {
+      top: 6px;
+      left: 6px;
+      z-index: 1
+    }
+
+    .crt-paper,
+    .crt-paper-layers:after,
+    .crt-paper-layers:before {
+      border: 1px solid transparent
+    }
+
+    .crt-paper {
+      z-index: 3;
+      padding-left: 20px;
+      padding-right: 20px
+    }
+  }
+
+  .crt-paper,
+  .crt-paper-layers:after,
+  .crt-paper-layers:before {
+    border-color: #1f1f1f
+  }
+
+  .crt-paper,
+  .crt-paper-layers:after,
+  .crt-paper-layers:before {
+    background-color: #373737
+  }
+}

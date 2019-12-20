@@ -1,7 +1,7 @@
 export default interface IButton {
   size?: "sm" | "lg" | ""
   type?: "button" | "submit"
-  value: string
+  value?: string
   theme?: "primary" | "default" | "light" | "inherit"
   disabled?: boolean
   block?: boolean

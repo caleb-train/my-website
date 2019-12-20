@@ -5,11 +5,10 @@
  */
 
 // You can delete this file if you're not using it
+import './src/styles/normalize.scss'
 import './src/styles/index.scss'
 import './src/fonts/icomoon/style.css'
-/* import "./src/styles/page.scss"
-import "./src/styles/elements.scss"
-import "./src/styles/layout.scss" */
-import "./src/styles/layout.scss"
+/* import "./src/styles/layout.scss"
 import "./src/styles/nav.scss"
+ */
 import "./src/styles/utilities.scss"

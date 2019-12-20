@@ -3,7 +3,7 @@ import "./index.scss"
 
 export default ({ theme = "inherit", ...props }) => {
   return (
-    <div id="crt-nav-wrap" className="hidden-sm hidden-xs">
+    <div id="crt-nav-wrap" className="hidden-sm hidden-xs min-nav">
       <div id="crt-nav-inner">
         <div className="crt-nav-cont">
           <div id="crt-nav-scroll">
@@ -14,7 +14,6 @@ export default ({ theme = "inherit", ...props }) => {
                     <img
                       className="avatar avatar-42"
                       src="assets/images/uploads/avatar/avatar-42x42.png"
-                      srcset="assets/images/uploads/avatar/avatar-84x84-2x.png 2x"
                       alt=""
                     />
                   </a>

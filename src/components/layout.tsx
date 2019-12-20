@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./Header"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
@@ -19,7 +19,8 @@ const Layout = ({ children }) => {
   return (
     <div className="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
       <div className="crt-wrapper">
-        <Header siteTitle={data.site.siteMetadata.title} />
+        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+        <Header siteTitle="Caleb" />
         <div
           style={{
             margin: `0 auto`,
