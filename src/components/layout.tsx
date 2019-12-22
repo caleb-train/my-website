@@ -17,24 +17,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
-      <div className="crt-wrapper">
+    <div className="">
+      <div className="app">
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         <Header siteTitle="Caleb" />
-        <div
-          style={{
-            margin: `0 auto`,
-            /* maxWidth: 960, */
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <div>
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
       </div>
     </div>

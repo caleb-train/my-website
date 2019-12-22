@@ -7,13 +7,7 @@ import "./header.scss"
 
 const Header = ({ siteTitle }) => (
   <header className="app-header" style={{}}>
-    <div
-      className="head-inner"
-      style={{
-        margin: `0 auto`,
-        maxWidth: 1196,
-      }}
-    >
+    <div className="head-inner">
       <div className="logo-wrap">
         <a className="logo" href="index.html">
           <Image
@@ -31,38 +25,21 @@ const Header = ({ siteTitle }) => (
         <nav className="main-nav">
           <UList list="ul" style="clear-list">
             <List>
-              <Link to="index.html">About</Link>
+              <Link to="#about">About</Link>
             </List>
             <List>
-              <Link to="experience.html">experience</Link>
+              <Link to="#experience">experience</Link>
             </List>
             <List>
-              <Link to="portfolio#">portfolio</Link>
+              <Link to="#portfolio">portfolio</Link>
             </List>
             <List>
-              <Link to="contact.html">contact</Link>
+              <Link to="#contact">contact</Link>
             </List>
           </UList>
         </nav>
       </div>
     </div>
-
-    <nav className="nav-sm">
-      <UList list="ul" style="clear-list">
-        {["Experience", "Portfolio", "References", "Contact"].map(link => (
-          <List>
-            <Link
-              to={`index.html#${String(link).toLowerCase()}`}
-              data-tooltip={link}
-            >
-              <span
-                className={`crt-icon crt-icon-${String(link).toLowerCase()}`}
-              ></span>
-            </Link>
-          </List>
-        ))}
-      </UList>
-    </nav>
   </header>
 )
 

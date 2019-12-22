@@ -1,22 +1,22 @@
 import * as React from "react"
 import IProgressBar from "./IProgressBar"
 import ProgressBar from "progressbar.js"
-import "./index1.scss"
+import "./index.scss"
 
 export default ({
-  theme = "default",
+  theme = "inherit",
   fontSize = 3,
   width = 40,
   ...props
 }: IProgressBar) => {
   React.useEffect(() => {
-    var bar = new ProgressBar[props.type]("#container", {
+    var bar = new ProgressBar[props.type](`#${props.id}`, {
       easing: "easeInOut",
       color: "inherit",
-      strokeWidth: 3,
-      trailWidth: 1,
+      strokeWidth: props.strokeWidth || 2,
+      trailWidth: props.strokeWidth || 2,
       text: {
-        value: `${props.valuenow}%`,
+        value: `${props.value || props.valuenow + "%"}`,
       },
       style: {
         color: "inherit",
@@ -43,7 +43,7 @@ export default ({
       aria-valuemax={100}
     >
       <div
-        id="container"
+        id={props.id}
         style={{ fontSize: `${fontSize}rem` }}
         className={props.type}
       ></div>

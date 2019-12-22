@@ -1,28 +1,30 @@
-.min-nav {
-  .avatar {
-    border-radius: 50%
-  }
+.app-nav {
+  padding: 1rem 0;
+  display: inline-block;
+  width: 100%;
 
-  .avatar-42 {
-    width: 42px;
-    height: 42px
-  }
+  ul {
+    display: flex;
+    justify-content: center;
 
-  .avatar-195 {
-    width: 195px;
-    height: 195px
-  }
+    @media (min-width: 992px) {
+      flex-direction: column;
+      position: fixed;
+    }
 
-  .comment-header .avatar {
-    top: 1.063em;
-    left: 0;
-    position: absolute;
-    border-radius: 50%
-  }
+    li {
+      margin: 0 1.5rem;
+      display: inline-block;
 
-  .ref-avatar {
-    top: 0;
-    left: 0;
-    position: absolute
+      @media (min-width: 992px) {
+        margin: 0 0 3rem;
+      }
+
+      a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2rem;
+      }
+    }
   }
 }

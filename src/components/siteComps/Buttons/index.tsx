@@ -23,7 +23,7 @@ export default ({
     type={props.type || "button"}
     {...attr}
   >
-    <span className={`ctr-icon ${props.icon}`}></span>
+    {props.icon ? <span className={`ctr-icon ${props.icon}`}></span> : null}
     {value}
   </button>
 )

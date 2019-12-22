@@ -12,8 +12,12 @@ export default ({ theme = "inherit", ...props }) => {
       <About />
       <Experience />
       <Portfolio />
-      <Reference />
       <Contact />
+      <footer>
+        © {new Date().getFullYear()}, Built with
+        {` `}
+        <a href="https://www.gatsbyjs.org">Gatsby</a>
+      </footer>
     </div>
   )
 }

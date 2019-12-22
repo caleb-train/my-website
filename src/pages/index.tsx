@@ -16,11 +16,12 @@ import Grid from "../components/siteComps/Filtergrid"
 import Sidebox from "../components/molecules/Sidebox"
 import Mininav from "../components/molecules/Mininav"
 import Content from "../components/molecules/Content"
+import "../styles/home.scss"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div id="crt-container" className="crt-container">
+    <div className="home">
       <Sidebox />
       <Mininav />
       <Content />

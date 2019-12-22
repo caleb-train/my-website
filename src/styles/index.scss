@@ -9,8 +9,18 @@
   --default-text: #fff;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
   font-family: Quicksand;
+  width: 100vw;
+  overflow-x: hidden;
+  background-image: url('/bg-01.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .theme-primary {

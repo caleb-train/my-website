@@ -1,11 +1,11 @@
 .btn {
   font-family: inherit;
-  font-size: 15px;
+  font-size: .9rem;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.05em;
   vertical-align: middle;
-  padding: 8px 25px;
+  padding: .8rem 2rem;
   border: 0;
   cursor: pointer;
   -webkit-appearance: none;
@@ -26,6 +26,14 @@
     width: 100%;
   }
 
+  &-lg {
+    font-size: 1.2rem;
+  }
+
+  &-sm {
+    font-size: .8rem;
+  }
+
   &.disabled,
   &[disabled] {
     cursor: not-allowed;
@@ -35,5 +43,9 @@
   &.disabled:hover,
   &[disabled]:hover {
     box-shadow: none;
+  }
+
+  span {
+    margin-right: 1rem;
   }
 }

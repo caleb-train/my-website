@@ -45,13 +45,6 @@ sup {
   margin-bottom: .9em
 }
 
-.icon-list .crt-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 1.7em
-}
-
 .icon-list-col3:after {
   display: block;
   clear: both
@@ -529,11 +522,6 @@ img.aligncenter {
   display: none
 }
 
-.btn,
-.btn .crt-icon {
-  display: inline-block
-}
-
 .editor figure {
   margin: 44px 0
 }
@@ -565,13 +553,6 @@ img.aligncenter {
 
 .btn:hover {
   box-shadow: -1px 2px 4px rgba(0, 0, 0, .25)
-}
-
-.btn .crt-icon {
-  font-size: 1.2em;
-  line-height: 1em;
-  vertical-align: top;
-  margin-right: .8em
 }
 
 .btn-lg {
@@ -615,12 +596,6 @@ img.aligncenter {
 .tooltip:after {
   border-radius: 4px;
   text-align: center
-}
-
-.btn-icon .crt-icon {
-  font-size: 32px;
-  line-height: 50px;
-  margin: 0
 }
 
 .btn-shade {
@@ -835,14 +810,6 @@ img.aligncenter {
   margin: 0 8px
 }
 
-.page-numbers.next .crt-icon,
-.page-numbers.prev .crt-icon {
-  font-size: .698em;
-  line-height: 25px;
-  display: inline-block;
-  vertical-align: middle
-}
-
 .progress-title {
   font-size: .85em;
   line-height: 1.2em;
@@ -997,14 +964,6 @@ img.aligncenter {
 .screen-reader-text,
 .toggle-cont {
   display: none
-}
-
-.crt-social a:hover {
-  opacity: .7
-}
-
-.crt-social .crt-icon {
-  font-size: 1.25em
 }
 
 .avatar {
@@ -2148,11 +2107,6 @@ img.aligncenter {
   border-bottom: 3px solid transparent
 }
 
-#crt-nav-sm li .crt-icon {
-  font-size: 34px;
-  line-height: 42px
-}
-
 #crt-nav-wrap .crt-nav a,
 .crt-tooltip {
   line-height: 1em
@@ -2180,10 +2134,6 @@ img.aligncenter {
   padding-top: 10px
 }
 
-#crt-nav-wrap .crt-nav .crt-icon {
-  font-size: 28px
-}
-
 #crt-nav-inner {
   transition: top .3s ease-out
 }
@@ -2199,10 +2149,6 @@ img.aligncenter {
 
 #crt-nav-tools {
   font-size: 22px
-}
-
-#crt-nav-tools .crt-icon {
-  display: block
 }
 
 .crt-tooltip {
@@ -2487,13 +2433,6 @@ img.aligncenter {
   width: 35px;
   height: 35px;
   position: absolute
-}
-
-#crt-sidebar-close .crt-icon {
-  font-size: 15px;
-  line-height: 35px;
-  margin-left: 1px;
-  margin-top: -1px
 }
 
 @media (max-width:991px) {
@@ -3534,4 +3473,67 @@ body {
 
 .text-dropcup-sq {
   color: #373737
+}
+
+/*  */
+
+#crt-sidebar-close .crt-icon {
+  font-size: 15px;
+  line-height: 35px;
+  margin-left: 1px;
+  margin-top: -1px
+}
+
+#crt-nav-tools .crt-icon {
+  display: block
+}
+
+#crt-nav-wrap .crt-nav .crt-icon {
+  font-size: 28px
+}
+
+#crt-nav-sm li .crt-icon {
+  font-size: 34px;
+  line-height: 42px
+}
+
+.page-numbers.next .crt-icon,
+.page-numbers.prev .crt-icon {
+  font-size: .698em;
+  line-height: 25px;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.btn-icon .crt-icon {
+  font-size: 32px;
+  line-height: 50px;
+  margin: 0
+}
+
+.btn .crt-icon {
+  font-size: 1.2em;
+  line-height: 1em;
+  vertical-align: top;
+  margin-right: .8em
+}
+
+.btn,
+.btn .crt-icon {
+  display: inline-block
+}
+
+.icon-list .crt-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.7em
+}
+
+.crt-social a:hover {
+  opacity: .7
+}
+
+.crt-social .crt-icon {
+  font-size: 1.25em
 }

@@ -1,65 +1,62 @@
 import React from "react"
+import { UList, List } from "../../siteComps/List"
+import { Link } from "gatsby"
+import Image from "../../siteComps/Image"
+import Button from "../../siteComps/Buttons"
 import "./index.scss"
 
 export default ({ theme = "inherit", ...props }) => {
   return (
     <div className="side-box">
-      <div id="crt-side-box-wrap" className="crt-sticky">
-        <div id="crt-side-box">
-          <div className="crt-side-box-item">
-            <div className="crt-card bg-primary text-center">
-              <div className="crt-card-avatar">
-                <img
-                  className="avatar avatar-195"
-                  src="assets/images/uploads/avatar/avatar-195x195.png"
-                  width="195"
-                  height="195"
-                  alt=""
-                />
-              </div>
-              <div className="crt-card-info">
-                <h2 className="text-upper">Ola Lowe</h2>
-
-                <p className="text-muted">Florist | Decorator</p>
-                <ul className="crt-social clear-list">
-                  <li>
-                    <a>
-                      <span className="crt-icon crt-icon-facebook"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <span className="crt-icon crt-icon-twitter"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <span className="crt-icon crt-icon-google-plus"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <span className="crt-icon crt-icon-instagram"></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a>
-                      <span className="crt-icon crt-icon-pinterest"></span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="crt-side-box-btn">
-              <a
-                className="btn btn-default btn-lg btn-block btn-thin btn-upper"
-                href="#"
-              >
-                Download Resume
-              </a>
-            </div>
-          </div>
+      <div className="card">
+        <div className="card-avatar">
+          <Image
+            attr={{
+              className: "avatar avatar-195",
+              width: "195",
+              height: "195",
+            }}
+            src="/dp.png"
+            alt="brain-logo"
+          />
         </div>
+        <div className="card-info">
+          <h2>Ola Lowe</h2>
+
+          <p>Florist | Decorator</p>
+          <UList list="ul" style="clear-list">
+            <List>
+              <Link to="#">
+                <span className="crt-icon crt-icon-facebook"></span>
+              </Link>
+            </List>
+            <List>
+              <Link to="#">
+                <span className="crt-icon crt-icon-twitter"></span>
+              </Link>
+            </List>
+            <List>
+              <Link to="#">
+                <span className="crt-icon crt-icon-google-plus"></span>
+              </Link>
+            </List>
+            <List>
+              <Link to="#">
+                <span className="crt-icon crt-icon-instagram"></span>
+              </Link>
+            </List>
+            <List>
+              <Link to="#">
+                <span className="crt-icon crt-icon-pinterest"></span>
+              </Link>
+            </List>
+          </UList>
+        </div>
+      </div>
+      <div className="download">
+        <a className="" href="#">
+          <Button value="DOWNLOAD RESUME" theme="default" />
+        </a>
       </div>
     </div>
   )

@@ -1,84 +1,52 @@
 import React from "react"
 import Page from "../../Page"
+import Grid from "../../../siteComps/Filtergrid"
+import Heading from "../../../siteComps/Heading"
 
 export default ({ theme = "inherit", ...props }) => {
   return (
     <Page id="portfolio">
-      <section className="section padd-box">
-        <h2 className="title-lg text-upper padd-box">portfolio</h2>
-
-        <div className="pf-wrap">
-          <div className="pf-filter padd-box">
-            <button data-filter="*">all</button>
-            <button data-filter=".photography">photography</button>
-            <button data-filter=".design">design</button>
-          </div>
-
-          <div className="pf-grid">
-            <div className="pf-grid-sizer"></div>
-
-            <div className="pf-grid-item design">
-              <a className="pf-project" href="#pf-popup-6">
-                <figure className="pf-figure">
-                  <img
-                    src="assets/images/uploads/portfolio/prj-06.jpg"
-                    alt=""
-                  />
-                </figure>
-
-                <div className="pf-caption text-center">
-                  <div className="valign-table">
-                    <div className="valign-cell">
-                      <h2 className="pf-title text-upper">stu unger rise</h2>
-
-                      <div className="pf-text clear-mrg">
-                        <p>
-                          Accessories Here you can find the best computer
-                          monitor, printer, scanner, speaker, projector.
-                          hardware and more
-                        </p>
-                      </div>
-
-                      <button className="pf-btn btn btn-primary">
-                        View More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div className="pf-grid-item photography">
-              <a className="pf-project" href="#pf-popup-7">
-                <figure className="pf-figure">
-                  <img
-                    src="assets/images/uploads/portfolio/prj-01.jpg"
-                    alt=""
-                  />
-                </figure>
-
-                <div className="pf-caption text-center">
-                  <div className="valign-table">
-                    <div className="valign-cell">
-                      <h2 className="pf-title text-upper">stu unger rise</h2>
-
-                      <div className="pf-text clear-mrg">
-                        <p>
-                          Accessories Here you can find the best computer
-                          monitor, printer, scanner, speaker, projector.
-                          hardware and more
-                        </p>
-                      </div>
-
-                      <button className="pf-btn btn btn-primary">
-                        View More
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+      <section>
+        <Heading uppercase type="h1" text="portfolio" />
+        <div className="portfolio-grid">
+          <Grid
+            filters={[
+              { name: "photography", title: "photography" },
+              { name: "design", title: "design" },
+            ]}
+            projects={[
+              {
+                name: "photography",
+                image:
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxEOVTcvf8wEI1bGPVZrCVADRvWGpFsVzrowss8S1SuQl_xJjK",
+                alt: "image",
+                body:
+                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
+                title: "stu unger rise",
+                link: "www.google.com",
+              },
+              {
+                name: "design",
+                image:
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkB0nT0L_8AvBP9y87XoRj24JMDcRp8cyDJ2k1iMUnq83QA--J",
+                alt: "image",
+                body:
+                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
+                title: "stu unger rise",
+                link: "www.google.com",
+              },
+              {
+                name: "photography",
+                image:
+                  "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg",
+                alt: "image",
+                body:
+                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
+                title: "stu unger rise",
+                link: "www.google.com",
+              },
+            ]}
+          />
         </div>
       </section>
     </Page>

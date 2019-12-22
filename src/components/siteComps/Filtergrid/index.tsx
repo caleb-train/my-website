@@ -27,7 +27,8 @@ export default ({ theme = "default", ...props }: IFilter) => {
 
   const selectn = e => {
     let filter = e.target.getAttribute("data-filter")
-    console.log(filter)
+    document.querySelector(".pf-wrap button.active").classList.remove("active")
+    e.target.classList.add("active")
     iso.arrange({
       filter: `${filter}`,
     })
@@ -39,6 +40,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
       <div className="pf-filter padd-box">
         <Button
           borderRadius="medium"
+          classes="active"
           value="all"
           theme="inherit"
           attr={{ "data-filter": "*", onClick: e => selectn(e) }}
@@ -78,7 +80,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
                     />
 
                     <div className="pf-text clear-mrg">
-                      <Paragraph text={proj.body} />
+                      <Paragraph>{proj.body}</Paragraph>
                     </div>
 
                     <a
@@ -89,6 +91,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
                       <Button
                         classes="pf-btn"
                         value="View More"
+                        size="sm"
                         theme={theme}
                       />
                     </a>

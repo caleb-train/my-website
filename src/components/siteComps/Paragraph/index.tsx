@@ -10,6 +10,6 @@ export default ({ theme = "inherit", ...props }: IParagraph) => (
     ${props.classes}
     `}
   >
-    {props.text}
+    {props.children}
   </p>
 )

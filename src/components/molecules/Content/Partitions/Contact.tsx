@@ -1,5 +1,9 @@
 import React from "react"
 import Page from "../../Page"
+import { Link } from "gatsby"
+import { UList, List } from "../../../siteComps/List"
+import Heading from "../../../siteComps/Heading"
+import Buttons from "../../../siteComps/Buttons"
 
 const Ref = () => {}
 
@@ -7,45 +11,46 @@ export default ({ theme = "inherit", ...props }) => {
   return (
     <Page id="contact">
       <div className="padd-box">
-        <h2 className="title-lg text-upper">contact me</h2>
-
-        <div className="padd-box-xs">
+        <Heading uppercase type="h1" text="contact me" />
+        <div className="social-links">
           <header className="contact-head">
-            <ul className="crt-social clear-list text-primary">
-              <li>
-                <a>
+            <UList list="ul" style="clear-list">
+              <List>
+                <Link to="#">
                   <span className="crt-icon crt-icon-facebook"></span>
-                </a>
-              </li>
-              <li>
-                <a>
+                </Link>
+              </List>
+              <List>
+                <Link to="#">
                   <span className="crt-icon crt-icon-twitter"></span>
-                </a>
-              </li>
-              <li>
-                <a>
+                </Link>
+              </List>
+              <List>
+                <Link to="#">
                   <span className="crt-icon crt-icon-google-plus"></span>
-                </a>
-              </li>
-              <li>
-                <a>
+                </Link>
+              </List>
+              <List>
+                <Link to="#">
                   <span className="crt-icon crt-icon-instagram"></span>
-                </a>
-              </li>
-              <li>
-                <a>
+                </Link>
+              </List>
+              <List>
+                <Link to="#">
                   <span className="crt-icon crt-icon-pinterest"></span>
-                </a>
-              </li>
-            </ul>
-            <h3 className="title text-upper">
-              fell free to contact me the core of your marketing
-            </h3>
+                </Link>
+              </List>
+            </UList>
+            <Heading
+              uppercase
+              type="h3"
+              text="fell free to contact me the core of your marketing"
+            />
           </header>
         </div>
 
-        <div className="padd-box-sm">
-          <form action="#" method="post" className="contact-form">
+        <div className="contact-form">
+          <form action="#" method="post">
             <div className="form-group">
               <label className="form-label" htmlFor="author">
                 Your Name
@@ -60,12 +65,7 @@ export default ({ theme = "inherit", ...props }) => {
                 Your E-mail
               </label>
               <div className="form-item-wrap">
-                <input
-                  id="email"
-                  className="form-item"
-                  type="email"
-                  required="required"
-                />
+                <input id="email" className="form-item" type="email" required />
               </div>
             </div>
 
@@ -88,11 +88,7 @@ export default ({ theme = "inherit", ...props }) => {
             </div>
 
             <div className="form-submit form-item-wrap">
-              <input
-                className="btn btn-primary btn-lg"
-                type="submit"
-                value="Post Your Comment"
-              />
+              <Buttons value="Post Your Comment" />
             </div>
           </form>
         </div>

@@ -1,11 +1,12 @@
 import React from "react"
 import Page from "../../Page"
+import Heading from "../../../siteComps/Heading"
 
 export default ({ theme = "inherit", ...props }) => {
   return (
     <Page id="experience">
       <section className="section padd-box">
-        <h2 className="title-lg text-upper">work experience</h2>
+        <Heading uppercase type="h1" text="work experience" />
         <div className="education">
           <div className="education-box">
             <time className="education-date" dateTime="2014-01T2016-03">
