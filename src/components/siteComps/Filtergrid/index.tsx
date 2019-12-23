@@ -3,7 +3,6 @@ import IFilter from "./IFilter"
 import Button from "../Buttons"
 import Heading from "../Heading"
 import Paragraph from "../Paragraph"
-import Isotope from "isotope-layout"
 import Image from "../Image"
 import "./index.scss"
 
@@ -13,16 +12,19 @@ export default ({ theme = "default", ...props }: IFilter) => {
 
   React.useEffect(() => {
     const grid = pfGrid.current
-    iso = iso
-      ? iso
-      : new Isotope(grid, {
-          // options...
-          itemSelector: ".pf-grid-item",
-          masonry: {
-            columnWidth: ".pf-grid-sizer",
-            gutter: 2,
-          },
-        })
+    if (typeof window !== "undefined") {
+      const Isotope = require("isotope-layout")
+      iso = iso
+        ? iso
+        : new Isotope(grid, {
+            // options...
+            itemSelector: ".pf-grid-item",
+            masonry: {
+              columnWidth: ".pf-grid-sizer",
+              gutter: 2,
+            },
+          })
+    } else iso = { arrage: _ => {} }
   }, [iso])
 
   const selectn = e => {
