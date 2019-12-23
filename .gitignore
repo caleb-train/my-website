@@ -56,13 +56,13 @@ typings/
 
 # gatsby files
 .cache/
-public
 
 # Mac files
 .DS_Store
 
 # Yarn
 yarn-error.log
+yarn-lock.json
 .pnp/
 .pnp.js
 # Yarn Integrity file
