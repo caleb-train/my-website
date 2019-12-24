@@ -14,9 +14,9 @@ export default ({ theme = "inherit", ...props }) => {
       <Portfolio />
       <Contact />
       <footer>
-        © {new Date().getFullYear()}, Built with
+        © {new Date().getFullYear()}, Inspired by
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="">Certy</a>
       </footer>
     </div>
   )

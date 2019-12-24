@@ -8,7 +8,9 @@ blockquote {
   border-radius: 7px;
   width: 100%;
   max-width: 470px;
-  margin: 0 auto 22px
+  margin: 0 auto 22px;
+  background-color: var(--primary-color);
+  color: var(--primary-text);
 }
 
 blockquote p:last-child {

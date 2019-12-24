@@ -4,7 +4,7 @@ import "./index.scss"
 
 export default ({ theme = "inherit", ...props }: IQuote) => {
   return (
-    <blockquote className={`theme-${theme} quote-${props.quoteIcon}`}>
+    <blockquote className={`quote-${props.quoteIcon}`}>
       {props.children}
       <p>
         <cite>

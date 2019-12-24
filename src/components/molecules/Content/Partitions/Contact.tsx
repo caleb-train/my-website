@@ -27,7 +27,7 @@ export default ({ theme = "inherit", ...props }) => {
               </List>
               <List>
                 <Link to="#">
-                  <span className="crt-icon crt-icon-google-plus"></span>
+                  <span className="crt-icon crt-icon-linkedin"></span>
                 </Link>
               </List>
               <List>
@@ -35,17 +35,8 @@ export default ({ theme = "inherit", ...props }) => {
                   <span className="crt-icon crt-icon-instagram"></span>
                 </Link>
               </List>
-              <List>
-                <Link to="#">
-                  <span className="crt-icon crt-icon-pinterest"></span>
-                </Link>
-              </List>
             </UList>
-            <Heading
-              uppercase
-              type="h3"
-              text="fell free to contact me the core of your marketing"
-            />
+            <Heading uppercase type="h3" text="fell free to contact me" />
           </header>
         </div>
 

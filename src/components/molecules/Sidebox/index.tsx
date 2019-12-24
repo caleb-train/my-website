@@ -21,9 +21,9 @@ export default ({ theme = "inherit", ...props }) => {
           />
         </div>
         <div className="card-info">
-          <h2>Ola Lowe</h2>
+          <h2>Caleb Ebie</h2>
 
-          <p>Florist | Decorator</p>
+          <p>Engineer | Designer</p>
           <UList list="ul" style="clear-list">
             <List>
               <Link to="#">
@@ -37,17 +37,12 @@ export default ({ theme = "inherit", ...props }) => {
             </List>
             <List>
               <Link to="#">
-                <span className="crt-icon crt-icon-google-plus"></span>
+                <span className="crt-icon crt-icon-linkedin"></span>
               </Link>
             </List>
             <List>
               <Link to="#">
                 <span className="crt-icon crt-icon-instagram"></span>
-              </Link>
-            </List>
-            <List>
-              <Link to="#">
-                <span className="crt-icon crt-icon-pinterest"></span>
               </Link>
             </List>
           </UList>

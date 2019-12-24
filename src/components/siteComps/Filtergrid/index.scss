@@ -11,9 +11,10 @@
     button {
       margin-right: .5rem;
       padding: .5rem 1rem;
+      background-color: transparent;
 
       &.active {
-        background: rgba(0, 0, 0, .5);
+        background: var(--primary-color);
       }
     }
   }
@@ -114,7 +115,9 @@
     transform: translateY(10px);
     transition: -webkit-transform .4s ease-in-out;
     transition: transform .4s ease-in-out;
-    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out
+    transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+    padding: .6rem 1rem;
+    font-size: .8rem;
   }
 
   .pf-caption {

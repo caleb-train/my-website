@@ -11,39 +11,65 @@ export default ({ theme = "inherit", ...props }) => {
         <div className="portfolio-grid">
           <Grid
             filters={[
-              { name: "photography", title: "photography" },
-              { name: "design", title: "design" },
+              { name: "react", title: "React" },
+              { name: "angular", title: "Angular" },
+              { name: "design", title: "Design" },
             ]}
             projects={[
               {
-                name: "photography",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTxEOVTcvf8wEI1bGPVZrCVADRvWGpFsVzrowss8S1SuQl_xJjK",
-                alt: "image",
+                name: "angular",
+                image: "/salesapp.png",
+                alt: "Restuarant",
                 body:
-                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
-                title: "stu unger rise",
-                link: "www.google.com",
+                  "Restaurant sales application for handling stock keeping and receipt issuing",
+                title: "Sales App",
+                link: "http://ncgcteenz.com.ng/tego/hms",
+              },
+              {
+                name: "react",
+                image: "/scrapbook.png",
+                alt: "Scrapbook",
+                body:
+                  "Note Taking Application that gives users the chance to make and save notes online",
+                title: "Scrapbook",
+                link: "https://note-taking-app-staging.herokuapp.com/",
               },
               {
                 name: "design",
-                image:
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTkB0nT0L_8AvBP9y87XoRj24JMDcRp8cyDJ2k1iMUnq83QA--J",
-                alt: "image",
+                image: "/ulearn.webp",
+                alt: "Ulearn",
                 body:
-                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
-                title: "stu unger rise",
-                link: "www.google.com",
+                  "Android Study Application that enables users to view past questions for JAMB & PostUTME and take a test",
+                title: "Ulearn",
+                link:
+                  "https://play.google.com/store/apps/details?id=com.operator.u_learn&hl=en",
               },
               {
-                name: "photography",
-                image:
-                  "https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg",
-                alt: "image",
+                name: "design",
+                image: "/debbiewales.png",
+                alt: "Debbywales",
                 body:
-                  "Accessories Here you can find the best computer monitor, printer, scanner, speaker, projector. hardware and more",
-                title: "stu unger rise",
-                link: "www.google.com",
+                  "debbywales ecommerce site enables the client add, remove and sell shoe products while using paystack integration allowing customers to make payments",
+                title: "Debbywales",
+                link: "https://debbywales.com/en/",
+              },
+              {
+                name: "react",
+                image: "/ah.png",
+                alt: "authors haven",
+                body:
+                  "Blog application that gives authors the chance to create articles and have users read and leave remarks",
+                title: "Authors Haven",
+                link: "https://demeter-ah-frontend-staging.herokuapp.com",
+              },
+              {
+                name: "angular",
+                image: "/security.png",
+                alt: "Desteward",
+                body:
+                  "Security application that lets security agencies track their clients movement and alert them with messages",
+                title: "Desteward Security App",
+                link: "http://destewardgroup.com/security",
               },
             ]}
           />

@@ -12,3 +12,10 @@ import './src/fonts/icomoon/style.css'
 import "./src/styles/nav.scss"
  */
 import "./src/styles/utilities.scss"
+import React from "react"
+
+import { ThemeProvider } from "./src/context/ThemeContext"
+
+export const wrapRootElement = ({ element }) => (
+  <ThemeProvider>{element}</ThemeProvider>
+)

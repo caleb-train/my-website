@@ -246,7 +246,7 @@
 
     .education-date,
     .education:before {
-      background-color: #d14b4a
+      background-color: var(--primary-color)
     }
 
     .education-box:before {
@@ -271,6 +271,7 @@
       margin: 0 auto;
       width: 100%;
       text-align: center;
+      color: var(--primary-color);
 
       @media(min-width: 768px) {
         width: 50%;
@@ -341,7 +342,7 @@
         label {
           padding-right: 1rem;
           font-size: .9rem;
-          font-weight: 600;
+          font-weight: 400;
 
           @media (min-width: 768px) {
             display: inline-block;
@@ -365,6 +366,7 @@
           input,
           textarea {
             width: 100%;
+            background-color: #2a2a2a;
           }
 
           textarea.form-item {
@@ -375,7 +377,7 @@
       }
 
       .form-submit {
-        width: 80%;
+        width: 75%;
         margin: 2rem 0 0 auto;
       }
     }

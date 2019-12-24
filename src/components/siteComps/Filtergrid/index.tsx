@@ -14,16 +14,14 @@ export default ({ theme = "default", ...props }: IFilter) => {
     const grid = pfGrid.current
     if (typeof window !== "undefined") {
       const Isotope = require("isotope-layout")
-      iso = iso
-        ? iso
-        : new Isotope(grid, {
-            // options...
-            itemSelector: ".pf-grid-item",
-            masonry: {
-              columnWidth: ".pf-grid-sizer",
-              gutter: 2,
-            },
-          })
+      iso = new Isotope(grid, {
+        // options...
+        itemSelector: ".pf-grid-item",
+        masonry: {
+          columnWidth: ".pf-grid-sizer",
+          gutter: 2,
+        },
+      })
     } else iso = { arrage: _ => {} }
   }, [iso])
 
@@ -34,7 +32,6 @@ export default ({ theme = "default", ...props }: IFilter) => {
     iso.arrange({
       filter: `${filter}`,
     })
-    console.log(iso)
   }
 
   return (

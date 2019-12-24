@@ -1,13 +1,16 @@
 .progress-chart {
   text-align: center;
   display: inline-block;
+  stroke: var(--primary-color);
 
   &.Line .progressbar-text {
     left: 113% !important;
+    color: var(--primary-text);
   }
 
   .progressbar-text {
     font-size: inherit;
+    color: var(--primary-text);
   }
 
   #container {

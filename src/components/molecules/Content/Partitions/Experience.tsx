@@ -11,64 +11,69 @@ export default ({ theme = "inherit", ...props }) => {
           <div className="education-box">
             <time className="education-date" dateTime="2014-01T2016-03">
               <span>
-                Jan <strong className="text-upper">2014</strong> - Mar
-                <strong>2016</strong>
+                Oct <strong className="text-upper">2015</strong> - Dec
+                <strong>2017</strong>
               </span>
             </time>
-            <h3>Full Stack Developer</h3>
+            <h3>UI/UX Designer</h3>
             <div className="education-logo">
               <img
                 src="assets/images/uploads/experience/logo-audio-jungle.png"
                 alt=""
               />
             </div>
-            <span className="education-company">IBBA Group</span>
+            <span className="education-company">The Operator</span>
             <p>
-              Your brand is the core of your marketing, the central theme around
-              your products and services. Your brand is not your Logo or your
-              Company Name
+              I worked with a number of brilliant minds to create an app called
+              Ulearn that provided past questions, answers and solutions to
+              students writing exams to get into Universities and students in
+              the process of obtaining a degree. The app garnered over 10,000
+              Users after its release and received numerous positive feedback
+              from students
             </p>
           </div>
 
           <div className="education-box">
             <time className="education-date" dateTime="2014-01T2016-03">
               <span>
-                Jan <strong className="text-upper">2014</strong> - Mar
-                <strong>2016</strong>
+                Feb <strong className="text-upper">2018</strong> - Mar
+                <strong>2019</strong>
               </span>
             </time>
-            <h3>Systems Analyst / Web Developer</h3>
+            <h3>Software Engineer</h3>
             <div className="education-logo">
               <img
                 src="assets/images/uploads/experience/logo-themeforest.png"
                 alt=""
               />
             </div>
-            <span className="education-company">Loft Studio</span>
+            <span className="education-company">Webplay Nigeria</span>
             <p>
-              Your brand is the core of your marketing, the central theme around
-              your products and services.
+              I Created software application to manage stock and sales coupled
+              with POS integrations such as reciept printing and barcode
+              scanning for restuarants and pharmacies
             </p>
           </div>
 
           <div className="education-box">
             <time className="education-date" dateTime="2014-01T2016-03">
               <span>
-                Jan <strong className="text-upper">2014</strong> - Mar
-                <strong>2016</strong>
+                Mar <strong className="text-upper">2019</strong> - Sept
+                <strong>2019</strong>
               </span>
             </time>
-            <h3>Full Stack Developer</h3>
+            <h3>Full Stack JS Developer</h3>
             <div className="education-logo">
               <img
                 src="assets/images/uploads/experience/logo-envato.png"
                 alt=""
               />
             </div>
-            <span className="education-company">Stu Unger Rise</span>
+            <span className="education-company">Andela Nigeria</span>
             <p>
-              Your brand is the core of your marketing, the central theme around
-              your products and services.
+              I worked in a team to create a Blog application and implement unit
+              testing of various app features produced by the organisation using
+              technologies like reactjs/Nextjs and node
             </p>
           </div>
         </div>

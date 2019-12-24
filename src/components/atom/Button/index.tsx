@@ -22,7 +22,6 @@ export default ({
     ${props.size ? "btn-" + props.size : ""}
     ${props.block ? "btn-block" : ""}
     ${props.thin ? "text-thin" : ""}
-    theme-${theme}
     ${props.disabled ? "disabled" : ""}
     ${props.uppercase ? "text-upper" : ""}
     ${props.classes}`}

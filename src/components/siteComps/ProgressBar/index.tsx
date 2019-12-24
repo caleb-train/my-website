@@ -13,8 +13,8 @@ export default ({
     var bar = new ProgressBar[props.type](`#${props.id}`, {
       easing: "easeInOut",
       color: "inherit",
-      strokeWidth: props.strokeWidth || 2,
-      trailWidth: props.strokeWidth || 2,
+      strokeWidth: props.strokeWidth || 3,
+      trailWidth: props.strokeWidth || 3,
       text: {
         value: `${props.value || props.valuenow + "%"}`,
       },
@@ -35,7 +35,7 @@ export default ({
   }, [])
   return (
     <div
-      className={`progress-chart ${props.type} theme-${theme}`}
+      className={`progress-chart ${props.type}`}
       style={{ width: `${width}%` }}
       role="progressbar"
       aria-valuenow={props.valuenow}

@@ -61,23 +61,8 @@
   width: 5px;
   height: 5px;
   left: -1.6em;
-  margin-top: -2.5px
-}
-
-li.theme-primary:before {
-  background-color: var(--primary-text);
-}
-
-li.theme-inherit:before {
-  background-color: inherit;
-}
-
-li.theme-default:before {
-  background-color: var(--default-text);
-}
-
-li.theme-light:before {
-  background-color: var(--light-text);
+  margin-top: -2.5px;
+  color: var(--primary-text);
 }
 
 .styled-ul>li>ul {

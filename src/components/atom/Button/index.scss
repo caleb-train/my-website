@@ -1,4 +1,6 @@
 .btn {
+  background-color: var(--primary-color);
+  color: var(--primary-text);
 
   &.disabled,
   &[disabled] {
