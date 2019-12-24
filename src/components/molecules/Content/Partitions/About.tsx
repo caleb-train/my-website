@@ -19,11 +19,11 @@ export default ({ theme = "inherit", ...props }) => {
               of inefficiency using algorithms. My current super power is
               programming and I find great delight in authoring clean code and
               real world inspired features. My thought pattern towards any
-              problem is to first figure a simple solution that works, implement
+              problem is to figure out a simple solution that works, implement
               it with attention solely focused on functionality and then
-              gradually amend with asthetical values close to heart. My goal in
-              any project I embark on is to reflect the personality and brand
-              vision of my clients.... and it seems to have worked out so far
+              gradually amend with asthetic values close to heart. My goal in
+              any project is to reflect the personality and brand vision of my
+              clients.... and it seems to have worked out so far
             </Paragraph>
           </div>
         </div>

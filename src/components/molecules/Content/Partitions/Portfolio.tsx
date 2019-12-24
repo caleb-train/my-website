@@ -49,7 +49,7 @@ export default ({ theme = "inherit", ...props }) => {
                 image: "/debbiewales.png",
                 alt: "Debbywales",
                 body:
-                  "debbywales ecommerce site enables the client add, remove and sell shoe products while using paystack integration allowing customers to make payments",
+                  "This ecommerce site enables the client sell shoe products and make payments",
                 title: "Debbywales",
                 link: "https://debbywales.com/en/",
               },
@@ -58,7 +58,7 @@ export default ({ theme = "inherit", ...props }) => {
                 image: "/ah.png",
                 alt: "authors haven",
                 body:
-                  "Blog application that gives authors the chance to create articles and have users read and leave remarks",
+                  "Blog application that gives authors the chance to create and publish articles",
                 title: "Authors Haven",
                 link: "https://demeter-ah-frontend-staging.herokuapp.com",
               },
@@ -67,8 +67,8 @@ export default ({ theme = "inherit", ...props }) => {
                 image: "/security.png",
                 alt: "Desteward",
                 body:
-                  "Security application that lets security agencies track their clients movement and alert them with messages",
-                title: "Desteward Security App",
+                  "Security application that lets security agencies track their clients movement",
+                title: "Security App",
                 link: "http://destewardgroup.com/security",
               },
             ]}

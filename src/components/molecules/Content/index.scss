@@ -1,5 +1,18 @@
 .content {
-  line-height: 1.7rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+
+  #about,
+  #experience,
+  #contact {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    h2 {
+      opacity: .6;
+    }
+  }
 
   #about {
     .about {
@@ -106,7 +119,7 @@
 
         .dl-horizontal {
           margin-top: 2rem;
-          font-size: .9rem;
+          font-size: .8rem;
 
           dt {
             float: left;
@@ -261,7 +274,11 @@
     }
 
     .education-logo {
-      margin-bottom: 10px
+      margin-bottom: 10px;
+
+      img {
+        width: 5rem;
+      }
     }
 
   }
@@ -377,8 +394,12 @@
       }
 
       .form-submit {
-        width: 75%;
-        margin: 2rem 0 0 auto;
+        width: 100%;
+
+        @media (min-width: 768px) {
+          width: 75%;
+          margin: 2rem 0 0 auto;
+        }
       }
     }
   }

@@ -40,7 +40,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
         <Button
           borderRadius="medium"
           classes="active"
-          value="all"
+          value="All"
           theme="inherit"
           attr={{ "data-filter": "*", onClick: e => selectn(e) }}
         />

@@ -17,11 +17,6 @@ export default ({ theme = "inherit", ...props }) => {
             <UList list="ul" style="clear-list">
               <List>
                 <Link to="#">
-                  <span className="crt-icon crt-icon-facebook"></span>
-                </Link>
-              </List>
-              <List>
-                <Link to="#">
                   <span className="crt-icon crt-icon-twitter"></span>
                 </Link>
               </List>
@@ -36,7 +31,7 @@ export default ({ theme = "inherit", ...props }) => {
                 </Link>
               </List>
             </UList>
-            <Heading uppercase type="h3" text="fell free to contact me" />
+            <Heading uppercase type="h3" text="feel free to contact me" />
           </header>
         </div>
 

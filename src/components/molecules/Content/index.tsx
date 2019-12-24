@@ -16,7 +16,7 @@ export default ({ theme = "inherit", ...props }) => {
       <footer>
         © {new Date().getFullYear()}, Inspired by
         {` `}
-        <a href="">Certy</a>
+        <a href="https://certy.px-lab.com/">Certy</a>
       </footer>
     </div>
   )

@@ -27,11 +27,6 @@ export default ({ theme = "inherit", ...props }) => {
           <UList list="ul" style="clear-list">
             <List>
               <Link to="#">
-                <span className="crt-icon crt-icon-facebook"></span>
-              </Link>
-            </List>
-            <List>
-              <Link to="#">
                 <span className="crt-icon crt-icon-twitter"></span>
               </Link>
             </List>

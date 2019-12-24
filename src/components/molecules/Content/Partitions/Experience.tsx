@@ -18,7 +18,7 @@ export default ({ theme = "inherit", ...props }) => {
             <h3>UI/UX Designer</h3>
             <div className="education-logo">
               <img
-                src="assets/images/uploads/experience/logo-audio-jungle.png"
+                src="/operator.webp"
                 alt=""
               />
             </div>
@@ -43,7 +43,7 @@ export default ({ theme = "inherit", ...props }) => {
             <h3>Software Engineer</h3>
             <div className="education-logo">
               <img
-                src="assets/images/uploads/experience/logo-themeforest.png"
+                src="/webplay.png"
                 alt=""
               />
             </div>
@@ -65,7 +65,7 @@ export default ({ theme = "inherit", ...props }) => {
             <h3>Full Stack JS Developer</h3>
             <div className="education-logo">
               <img
-                src="assets/images/uploads/experience/logo-envato.png"
+                src="/andela.jpg"
                 alt=""
               />
             </div>
