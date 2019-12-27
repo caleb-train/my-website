@@ -14,16 +14,12 @@ export default ({ theme = "inherit", ...props }) => {
 
           <div className="about">
             <Paragraph>
-              <b>Helo, I’m Caleb Ebie!</b>
+              <b>Hello, I’m Caleb Ebie!</b>
               <br />I am an adept problem solver with a desire to rid the world
-              of inefficiency using algorithms. My current super power is
-              programming and I find great delight in authoring clean code and
-              real world inspired features. My thought pattern towards any
-              problem is to figure out a simple solution that works, implement
-              it with attention solely focused on functionality and then
-              gradually amend with asthetic values close to heart. My goal in
-              any project is to reflect the personality and brand vision of my
-              clients.... and it seems to have worked out so far
+              of inefficiency using algorithms. My super power is cognitive
+              learning and a desperate need to prove my worth. I find great
+              delight in authoring real world inspired features and reflecting
+              the brand vision of my clients through code.
             </Paragraph>
           </div>
         </div>
@@ -51,11 +47,13 @@ export default ({ theme = "inherit", ...props }) => {
 
             <dt className="text-upper">E-mail</dt>
             <dd>
-              <a href="mailto:robertsmith@company.com">ewiscobaba@gmail.com</a>
+              <a href="mailto:robertsmith@company.com">
+                caleb42.codes@gmail.com
+              </a>
             </dd>
 
             <dt className="text-upper">Phone</dt>
-            <dd>+234 8130439102</dd>
+            <dd>+234 7083488183</dd>
 
             <dt className="text-upper">Freelance</dt>
             <dd>Available</dd>
