@@ -2,7 +2,7 @@ import React from "react"
 import Page from "../../Page"
 import Paragraph from "../../../siteComps/Paragraph"
 import Heading from "../../../siteComps/Heading"
-import Button from "../../../siteComps/Buttons"
+import ShareBtn from "../../../siteComps/ShareBtn"
 import ProgressBar from "../../../siteComps/ProgressBar"
 
 export default ({ theme = "inherit", ...props }) => {
@@ -14,23 +14,19 @@ export default ({ theme = "inherit", ...props }) => {
 
           <div className="about">
             <Paragraph>
-              <b>Helo, I’m Caleb Ebie!</b>
+              <b>Hello, I’m Caleb Ebie!</b>
               <br />I am an adept problem solver with a desire to rid the world
               of inefficiency using algorithms. My current super power is
-              programming and I find great delight in authoring clean code and
-              real world inspired features. My thought pattern towards any
-              problem is to figure out a simple solution that works, implement
-              it with attention solely focused on functionality and then
-              gradually amend with asthetic values close to heart. My goal in
-              any project is to reflect the personality and brand vision of my
-              clients.... and it seems to have worked out so far
+              programming and I find great delight in authoring real world
+              inspired features. I am an excellent team player and a strong
+              believer in Modular programming.
             </Paragraph>
           </div>
         </div>
 
         <div className="row clearfix">
           <div className="share">
-            <Button value="Share" icon="crt-icon crt-icon-share-alt" />
+            <ShareBtn value="Share" icon="crt-icon crt-icon-share-alt" />
           </div>
           <div className="signature">
             {/* <img src="assets/images/uploads/signature.svg" alt="signature" /> */}
@@ -51,11 +47,13 @@ export default ({ theme = "inherit", ...props }) => {
 
             <dt className="text-upper">E-mail</dt>
             <dd>
-              <a href="mailto:robertsmith@company.com">ewiscobaba@gmail.com</a>
+              <a href="mailto:robertsmith@company.com">
+                caleb42.codes@gmail.com
+              </a>
             </dd>
 
             <dt className="text-upper">Phone</dt>
-            <dd>+234 8130439102</dd>
+            <dd>+234 7083488183</dd>
 
             <dt className="text-upper">Freelance</dt>
             <dd>Available</dd>

@@ -23,7 +23,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
         },
       })
     } else iso = { arrage: _ => {} }
-  }, [iso])
+  }, [])
 
   const selectn = e => {
     let filter = e.target.getAttribute("data-filter")
