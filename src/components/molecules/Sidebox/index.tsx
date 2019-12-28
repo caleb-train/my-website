@@ -26,26 +26,38 @@ export default ({ theme = "inherit", ...props }) => {
           <p>Engineer | Designer</p>
           <UList list="ul" style="clear-list">
             <List>
-              <Link to="#">
+              <a
+                href="https://twitter.com/caleb42_"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="crt-icon crt-icon-twitter"></span>
-              </Link>
+              </a>
             </List>
             <List>
-              <Link to="#">
+              <a
+                href="https://www.linkedin.com/in/ewere-ebie-1a6783150/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="crt-icon crt-icon-linkedin"></span>
-              </Link>
+              </a>
             </List>
             <List>
-              <Link to="#">
+              <a
+                href="https://www.instagram.com/42caleb_/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="crt-icon crt-icon-instagram"></span>
-              </Link>
+              </a>
             </List>
           </UList>
         </div>
       </div>
       <div className="download">
-        <a className="" href="#">
-          <Button value="DOWNLOAD RESUME" theme="default" />
+        <a className="" href="/Caleb_Ewere_Ebie.pdf" target="_blank">
+          <Button value="VIEW RESUME" theme="default" />
         </a>
       </div>
     </div>
