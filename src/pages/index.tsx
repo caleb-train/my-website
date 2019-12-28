@@ -6,6 +6,7 @@ import Sidebox from "../components/molecules/Sidebox"
 import Mininav from "../components/molecules/Mininav"
 import Content from "../components/molecules/Content"
 import "../styles/home.scss"
+import { Modal } from "../components/siteComps/ShareBtn"
 
 const IndexPage = () => (
   <Layout>
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <Mininav />
       <Content />
     </div>
+    <Modal />
   </Layout>
 )
 

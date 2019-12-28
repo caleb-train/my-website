@@ -2,7 +2,7 @@ import React from "react"
 import Page from "../../Page"
 import Paragraph from "../../../siteComps/Paragraph"
 import Heading from "../../../siteComps/Heading"
-import Button from "../../../siteComps/Buttons"
+import ShareBtn from "../../../siteComps/ShareBtn"
 import ProgressBar from "../../../siteComps/ProgressBar"
 
 export default ({ theme = "inherit", ...props }) => {
@@ -16,17 +16,17 @@ export default ({ theme = "inherit", ...props }) => {
             <Paragraph>
               <b>Hello, I’m Caleb Ebie!</b>
               <br />I am an adept problem solver with a desire to rid the world
-              of inefficiency using algorithms. My super power is cognitive
-              learning and a desperate need to prove my worth. I find great
-              delight in authoring real world inspired features and reflecting
-              the brand vision of my clients through code.
+              of inefficiency using algorithms. My current super power is
+              programming and I find great delight in authoring real world
+              inspired features. I am an excellent team player and a strong
+              believer in Modular programming.
             </Paragraph>
           </div>
         </div>
 
         <div className="row clearfix">
           <div className="share">
-            <Button value="Share" icon="crt-icon crt-icon-share-alt" />
+            <ShareBtn value="Share" icon="crt-icon crt-icon-share-alt" />
           </div>
           <div className="signature">
             {/* <img src="assets/images/uploads/signature.svg" alt="signature" /> */}
