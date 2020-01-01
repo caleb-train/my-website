@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import ThemeContext from "../context/ThemeContext"
+import { ToastContainer } from "react-toastify"
 import Header from "./Header"
 import "./layout.scss"
 
@@ -38,6 +39,13 @@ const Layout = ({ children }) => {
               </div>
             </div>
           </div>
+          <ToastContainer
+            autoClose={5000}
+            position="top-center"
+            hideProgressBar
+            rtl={false}
+            pauseOnHover
+          />
         </div>
       )}
     </ThemeContext.Consumer>
