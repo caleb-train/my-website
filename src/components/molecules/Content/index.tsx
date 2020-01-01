@@ -3,8 +3,8 @@ import "./index.scss"
 import About from "./Partitions/About"
 import Experience from "./Partitions/Experience"
 import Portfolio from "./Partitions/Portfolio"
-import Reference from "./Partitions/Reference"
 import Contact from "./Partitions/Contact"
+import isInViewport from "../../../utils"
 
 export default ({ theme = "inherit", ...props }) => {
   return (

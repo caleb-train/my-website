@@ -7,4 +7,6 @@ export interface IList {
   thin?: boolean
   theme?: "primary" | "default" | "light" | "inherit"
   children?: any
+  attr?: any
+  className?: string
 }

@@ -1,6 +1,11 @@
 .content {
   line-height: 2rem;
   letter-spacing: 1px;
+  margin-top: 3.5rem;
+
+  @media (min-width: 992px) {
+    margin-top: 0;
+  }
 
   #about,
   #experience,
@@ -15,6 +20,11 @@
   }
 
   #about {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+
     .about {
       margin: 0 0 3rem;
     }
@@ -74,6 +84,7 @@
           margin: 2rem 0 0;
           display: flex;
           align-items: center;
+          justify-content: space-between;
 
           .stack-details {
             height: 100%;
@@ -283,6 +294,10 @@
 
   }
 
+  #portfolio {
+    line-height: 1.5rem;
+  }
+
   #contact {
     .social-links {
       margin: 0 auto;
@@ -395,10 +410,12 @@
 
       .form-submit {
         width: 100%;
+        text-align: center;
 
         @media (min-width: 768px) {
           width: 75%;
           margin: 2rem 0 0 auto;
+          text-align: left;
         }
       }
     }
