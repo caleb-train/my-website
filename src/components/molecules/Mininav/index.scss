@@ -2,6 +2,17 @@
   padding: 1rem 0;
   display: inline-block;
   width: 100%;
+  background-color: var(--default-color);
+  box-shadow: 0rem .3rem .5rem .1rem rgba(0, 0, 0, .4);
+  position: fixed;
+  z-index: 30;
+  top: 4rem;
+
+  @media (min-width: 992px) {
+    box-shadow: none;
+    position: static;
+    background-color: transparent;
+  }
 
   ul {
     display: flex;
@@ -12,7 +23,14 @@
       position: fixed;
     }
 
+
     li {
+      opacity: .6;
+
+      &.is-current {
+        opacity: 1
+      }
+
       margin: 0 1.5rem;
       display: inline-block;
 

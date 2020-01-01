@@ -43,7 +43,7 @@ export default ({ theme = "inherit", ...props }) => {
                 </a>
               </List>
             </UList>
-            <Heading uppercase type="h3" text="feel free to contact me" />
+            <Heading uppercase type="h3" text="reach me anytime" />
           </header>
         </div>
 
@@ -78,7 +78,7 @@ export default ({ theme = "inherit", ...props }) => {
 
             <div className="form-group">
               <label className="form-label" htmlFor="comment">
-                Your Comment
+                Message
               </label>
               <div className="form-item-wrap">
                 <textarea id="comment" className="form-item"></textarea>
@@ -86,7 +86,7 @@ export default ({ theme = "inherit", ...props }) => {
             </div>
 
             <div className="form-submit form-item-wrap">
-              <Buttons value="Post Your Comment" />
+              <Buttons value="Send Message" />
             </div>
           </form>
         </div>

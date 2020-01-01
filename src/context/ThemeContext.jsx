@@ -26,7 +26,7 @@ class ThemeProvider extends React.Component {
   gotoPage = page => {
     const app = document.querySelector("body")
     app.scrollTo({
-      top: document.querySelector(page).offsetTop,
+      top: document.querySelector(page).offsetTop - 105,
       behavior: "smooth",
     })
   }

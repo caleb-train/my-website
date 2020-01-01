@@ -23,7 +23,7 @@ export default ({ theme = "inherit", ...props }) => {
         <div className="card-info">
           <h2>Caleb Ebie</h2>
 
-          <p>Engineer | Designer</p>
+          <p>Software Engineer</p>
           <UList list="ul" style="clear-list">
             <List>
               <a
