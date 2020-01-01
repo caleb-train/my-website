@@ -40,11 +40,13 @@
   opacity .3s ease-out,
   visibility .3s ease-out;
 
-  &.crt-animate {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
-    transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
+  @media (min-width:992px) {
+    &.crt-animate {
+      visibility: hidden;
+      opacity: 0;
+      -webkit-transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
+      transform: translate3d(0, 150px, 0) scale3d(1, 1, 1);
+    }
   }
 
   &.crt-animated {

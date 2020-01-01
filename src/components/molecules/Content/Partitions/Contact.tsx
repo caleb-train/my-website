@@ -1,13 +1,39 @@
 import React from "react"
 import Page from "../../Page"
-import { Link } from "gatsby"
+import emailjs from "emailjs-com"
 import { UList, List } from "../../../siteComps/List"
+import callToast from "../../../siteComps/Toast"
+import Loader from "../../../siteComps/Loader"
 import Heading from "../../../siteComps/Heading"
 import Buttons from "../../../siteComps/Buttons"
 
-const Ref = () => {}
-
 export default ({ theme = "inherit", ...props }) => {
+  const [sending, setSending] = React.useState(false)
+
+  function sendEmail(e) {
+    setSending(true)
+    e.preventDefault()
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_template",
+        e.target,
+        "user_hbthmg2GX3lv9a5cBNlZD"
+      )
+      .then(
+        result => {
+          setSending(false)
+          console.log(result.text)
+          callToast("message sent successfully", "success")
+        },
+        error => {
+          setSending(false)
+          console.log(error.text)
+          callToast("message sending failed", "warning")
+        }
+      )
+  }
+
   return (
     <Page id="contact">
       <div className="padd-box">
@@ -48,13 +74,18 @@ export default ({ theme = "inherit", ...props }) => {
         </div>
 
         <div className="contact-form">
-          <form action="#" method="post">
+          <form action="#" method="post" onSubmit={sendEmail}>
             <div className="form-group">
               <label className="form-label" htmlFor="author">
                 Your Name
               </label>
               <div className="form-item-wrap">
-                <input id="author" className="form-item" type="text" />
+                <input
+                  name="user_name"
+                  id="author"
+                  className="form-item"
+                  type="text"
+                />
               </div>
             </div>
 
@@ -63,7 +94,13 @@ export default ({ theme = "inherit", ...props }) => {
                 Your E-mail
               </label>
               <div className="form-item-wrap">
-                <input id="email" className="form-item" type="email" required />
+                <input
+                  name="user_email"
+                  id="email"
+                  className="form-item"
+                  type="email"
+                  required
+                />
               </div>
             </div>
 
@@ -72,7 +109,13 @@ export default ({ theme = "inherit", ...props }) => {
                 Subject
               </label>
               <div className="form-item-wrap">
-                <input id="url" className="form-item" type="url" />
+                <input
+                  required
+                  name="subject"
+                  id="url"
+                  className="form-item"
+                  type="text"
+                />
               </div>
             </div>
 
@@ -81,12 +124,21 @@ export default ({ theme = "inherit", ...props }) => {
                 Message
               </label>
               <div className="form-item-wrap">
-                <textarea id="comment" className="form-item"></textarea>
+                <textarea
+                  required
+                  name="message"
+                  id="comment"
+                  className="form-item"
+                ></textarea>
               </div>
             </div>
 
             <div className="form-submit form-item-wrap">
-              <Buttons value="Send Message" />
+              {sending ? (
+                <Loader />
+              ) : (
+                <Buttons type="submit" value="Send Message" />
+              )}
             </div>
           </form>
         </div>
