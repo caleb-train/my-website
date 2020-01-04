@@ -39,7 +39,7 @@ export default ({ theme = "default", ...props }: IFilter) => {
       <div className="pf-filter padd-box">
         <Button
           borderRadius="medium"
-          classes="active"
+          classes="all active"
           value="All"
           theme="inherit"
           attr={{ "data-filter": "*", onClick: e => selectn(e) }}

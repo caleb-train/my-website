@@ -6,16 +6,28 @@
   flex-direction: column;
   height: 100%;
   background-color: var(--primary-color);
-  margin-top: 4.5rem;
+  position: relative;
+  
 
   @media (min-width: 992px) {
     margin-top: 0;
-    position: fixed;
+    &.fix{
+      position: fixed;
+      top: 5rem;
+      -webkit-animation: move .3s ease-in-out;
+      animation: move .3s ease-in-out;
+    }
+    &.unfix{
+      top: 0;
+      -webkit-animation: unmove .3s ease;
+      animation: unmove .3s ease;
+    }
     width: 19rem;
     height: 31rem;
     padding: 1rem 0;
     box-shadow: 0rem 0rem 2rem .5rem #111;
   }
+  
 
   .card {
     text-align: center;
@@ -52,9 +64,10 @@
     width: 100%;
     padding: 1rem 0;
     max-width: 20rem;
-    background-color: var(--default-color);
+    background-color: var(--primary-color);
 
     @media (min-width: 992px) {
+      background-color: var(--default-color);
       padding: 2rem 0;
     }
 
@@ -64,7 +77,11 @@
       button {
         font-weight: 400;
         width: 80%;
-        background-color: #111;
+        background-color: rgba(0,0,0,.6);
+        border-radius: .5rem;
+        @media (min-width: 992px) {
+          border-radius: 2rem;
+        }
       }
     }
   }

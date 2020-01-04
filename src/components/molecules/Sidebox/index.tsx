@@ -45,11 +45,11 @@ export default ({ theme = "inherit", ...props }) => {
             </List>
             <List>
               <a
-                href="https://www.instagram.com/42caleb_/"
+                href="https://github.com/caleb-42"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="crt-icon crt-icon-instagram"></span>
+                <span className="crt-icon crt-icon-github"></span>
               </a>
             </List>
           </UList>

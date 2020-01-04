@@ -6,3 +6,20 @@ a {
 .text-upper {
   text-transform: uppercase;
 }
+
+.anim {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; 
+}
+
+@keyframes move {
+  0%   { top: 0;}
+  100%   { top: 5rem;}
+}
+
+@keyframes unmove {
+  0%   { top: 5rem;}
+  100%  { top: 0;}
+}
