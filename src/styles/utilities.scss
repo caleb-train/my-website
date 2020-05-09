@@ -1,10 +1,28 @@
-a {
-  text-decoration: none;
-  font-style: none;
-}
-
 .text-upper {
   text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-style: none;
+  background-color: transparent;
+  overflow-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  transition: all .2s ease-out
+}
+
+a:hover {
+  text-decoration: none
 }
 
 .anim {

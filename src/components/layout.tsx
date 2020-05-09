@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           <div className="">
             <div className="app">
               {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-              <Header siteTitle="Caleb" />
+              <Header siteTitle={data.site.siteMetadata.title} />
               <div>
                 <main>{children}</main>
               </div>

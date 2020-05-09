@@ -16,7 +16,7 @@ export default ({ theme = "inherit", ...props }) => {
               width: "195",
               height: "195",
             }}
-            src="/dp.png"
+            src="/dp.jpg"
             alt="brain-logo"
           />
         </div>

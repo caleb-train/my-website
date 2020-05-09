@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Meet Caleb`,
+    title: `Caleb`,
     description: `Meet Ewere Caleb Ebie, software engineer Open for Hire`,
     author: `Caleb`,
   },
@@ -13,6 +13,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `mdwn`,
+        path: `${__dirname}/src/mdwn`,
       },
     },
     `gatsby-transformer-sharp`,
